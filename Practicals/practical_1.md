@@ -83,7 +83,7 @@ longURL: original link
 
 ### (D) Hashing technique:
 
-#### 1. Hash + Collision Handling
+#### Hash + Collision Handling
 - It uses hash functions like MD5 & SHA-1.
 - They take the first 7 characters and handles them manually.
 
@@ -93,7 +93,7 @@ longURL: original link
 
 ---
 
-#### 2. Base62 Encoding (Preferred ✅)
+#### Base62 Encoding (Preferred)
 - It Converts numeric ID into short strings
 - Uses characters like:
   - `0–9`, `a–z`, `A–Z` (62 total)
@@ -172,7 +172,7 @@ Although I had a general idea of how the design works, I still had some confusio
 
 ---
 
-### 🔍 Topics I Want to Explore Further
+### Topics I Want to Explore Further
 
 Now to expand my current understandings of these concepts, I would like to learn more about:
 
