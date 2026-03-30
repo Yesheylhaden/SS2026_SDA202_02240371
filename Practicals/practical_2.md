@@ -52,7 +52,7 @@ Therefore, there is a need to create an automated system that is capable of effi
 
 ### 1. Interaction Overview Diagram (IoD – Actor Perspective)
 This diagram is an overview of how interactions among various actors are carried out in order to attain the overall business objective of automated grading. In this diagram, we are not required to go into much detail about the systems, only how these actors interact with each other. This diagram will provide us with an overview of how interactions are carried out from the start of assigning an assignment to the end of grading it. 
-![IoD](practical_2.md/Diagram/1.IoD.drawio.png)
+![IoD](./Diagram/1.IoD.drawio.png)
 
 ---
 
