@@ -79,7 +79,7 @@ Use Case Diagram describes the functional requirements of the system, showing th
 ### 3. Detailed Interaction Overview Diagram (System-Supported IoD)
 This diagram extends the previous IoD and adds system-level processes to show how the system supports interactions between actors. It shows a more detailed workflow, including internal components of the system, such as the auto-grader and plagiarism detection system. The diagram shows how all the processes are coordinated within the system to produce the final result, including code execution, grading, and storage, as well as external interactions such as the LMS and TurnItIn.
 
-![UML](./Diagram/UML.png) 
+![IOD&UCD](./Diagram/IOD&UCD.png)
 
 ---
 
