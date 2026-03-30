@@ -1,6 +1,18 @@
 # SS2026_SDA202_02240371
 # Automated Grading System – UML Design
 
+# Table of Contents
+
+1. [Overview](#overview)  
+2. [Objectives](#objectives)  
+3. [Actors](#actors)  
+4. [Diagrams Included](#diagrams-included)  
+5. [Constraints & Challenges](#constraints--challenges)  
+6. [Outcome / Benefits](#outcome--benefits)  
+7. [Lessons Learned & Future Improvements](#lessons-learned--future-improvements)  
+8. [Conclusion](#conclusion)  
+9. [References / Tools Used](#references--tools-used) 
+
 ## Overview
 The project is about developing an **Automated Grading System** for the university's Software Engineering course, SWE. This system is designed to replace the existing manual system with an efficient, effective, and reliable system that supports the execution of the code.
 
@@ -52,18 +64,21 @@ Therefore, there is a need to create an automated system that is capable of effi
 
 ### 1. Interaction Overview Diagram (IoD – Actor Perspective)
 This diagram is an overview of how interactions among various actors are carried out in order to attain the overall business objective of automated grading. In this diagram, we are not required to go into much detail about the systems, only how these actors interact with each other. This diagram will provide us with an overview of how interactions are carried out from the start of assigning an assignment to the end of grading it. 
+
 ![IoD](./Diagram/IoD.png)
 
 ---
 
 ### 2. Use Case Diagram (UCD)
 Use Case Diagram describes the functional requirements of the system, showing the interactions between the actors and the system. The diagram highlights the important use cases, such as submitting assignments, setting criteria for grading, performing tests, checking for plagiarism, and viewing results. The diagram describes what the system needs to perform in order to meet user requirements. It also presents a detailed overview of system functionalities from the user's point of view.
+
 ![UCD](./Diagram/UCD.png)
 
 ---
 
 ### 3. Detailed Interaction Overview Diagram (System-Supported IoD)
 This diagram extends the previous IoD and adds system-level processes to show how the system supports interactions between actors. It shows a more detailed workflow, including internal components of the system, such as the auto-grader and plagiarism detection system. The diagram shows how all the processes are coordinated within the system to produce the final result, including code execution, grading, and storage, as well as external interactions such as the LMS and TurnItIn.
+
 ![IoD&UCD](./Diagram/IoD&UCD.png)
 
 ---
