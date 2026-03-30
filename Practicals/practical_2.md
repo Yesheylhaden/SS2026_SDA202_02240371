@@ -79,7 +79,7 @@ Use Case Diagram describes the functional requirements of the system, showing th
 ### 3. Detailed Interaction Overview Diagram (System-Supported IoD)
 This diagram extends the previous IoD and adds system-level processes to show how the system supports interactions between actors. It shows a more detailed workflow, including internal components of the system, such as the auto-grader and plagiarism detection system. The diagram shows how all the processes are coordinated within the system to produce the final result, including code execution, grading, and storage, as well as external interactions such as the LMS and TurnItIn.
 
-![IoD&UCD](./Diagram/IoD&UCD.png)
+![UML](./Diagram/UML.png) 
 
 ---
 
@@ -89,7 +89,7 @@ This diagram extends the previous IoD and adds system-level processes to show ho
    - The solutions should avoid expensive software licenses and proprietary systems.  
 
 2. **Legacy LMS Integration**  
-   - The LMS might be outdated or even mainframe-based system.  
+   - The LMS might be outdated or even a mainframe-based system.  
    - The solutions should be compatible with the data and authentication schemes already in place.
 
 3. **Regulatory Compliance**  
