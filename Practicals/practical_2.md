@@ -89,7 +89,7 @@ This diagram extends the previous IoD and adds system-level processes to show ho
    - The solutions should avoid expensive software licenses and proprietary systems.  
 
 2. **Legacy LMS Integration**  
-   - The LMS might be outdated or even a mainframe-based system.  
+   - The LMS might be outdated or even mainframe-based system.  
    - The solutions should be compatible with the data and authentication schemes already in place.
 
 3. **Regulatory Compliance**  
