@@ -1,18 +1,6 @@
 # SS2026_SDA202_02240371
 # Automated Grading System – UML Design
 
-# Table of Contents
-
-1. [Overview](#overview)  
-2. [Objectives](#objectives)  
-3. [Actors](#actors)  
-4. [Diagrams Included](#diagrams-included)  
-5. [Constraints & Challenges](#constraints--challenges)  
-6. [Outcome / Benefits](#outcome--benefits)  
-7. [Lessons Learned & Future Improvements](#lessons-learned--future-improvements)  
-8. [Conclusion](#conclusion)  
-9. [References / Tools Used](#references--tools-used) 
-
 ## Overview
 The project is about developing an **Automated Grading System** for the university's Software Engineering course, SWE. This system is designed to replace the existing manual system with an efficient, effective, and reliable system that supports the execution of the code.
 
@@ -79,7 +67,7 @@ Use Case Diagram describes the functional requirements of the system, showing th
 ### 3. Detailed Interaction Overview Diagram (System-Supported IoD)
 This diagram extends the previous IoD and adds system-level processes to show how the system supports interactions between actors. It shows a more detailed workflow, including internal components of the system, such as the auto-grader and plagiarism detection system. The diagram shows how all the processes are coordinated within the system to produce the final result, including code execution, grading, and storage, as well as external interactions such as the LMS and TurnItIn.
 
-![IOD&UCD](./Diagram/IOD&UCD.png)
+![IoD&UCD](./Diagram/IOD&UCD.png)
 
 ---
 
