@@ -2,9 +2,9 @@
 
 ## Overview
 
-The purpose of the **Automated Grading System** is to make it easier for the assignment lifecycle management process, from assignment submission to assessment, to be streamlined with accuracy and precision, plagiarism detection, compliance monitoring, etc., through support for multiple users, like students, professors, auditors, etc., and interfacing with third-party applications such as Turnitin and LMS. The Automated Grading System saves time, effort, and energy by automatically performing repeated grading processes and synchronizing results and log maintenance.
+The requirement of Automated Grading System is to ensure the preciseness, efficiency, accuracy, plagiarism free, monitoring, etc., of the whole Assignment Life Cycle Management process from submission to evaluation using multi-user capability, including students, professors, auditors, etc., and also integrating with other applications such as Turnitin and LMS. Time, energy, and effort get saved with the Automated Grading System since the repetitive grading activity is made automatic and synchronization of results.
 
-The Automated Grading System is modeled with the help of the **UML Class & Object Diagram**, whereby class diagrams provide the complete blueprint of the system along with the actors and their interaction relationships, while object diagrams focus on particular cases or scenarios during execution.
+Modeling of Automated Grading System is possible through **UML Class and Object Diagrams**, which are going to be used to model some real-time scenarios in the system and how these different actors are going to relate with each other.
 
 ---
 
@@ -15,96 +15,93 @@ The Automated Grading System is modeled with the help of the **UML Class & Objec
 ## 1. System Actors (Classes)
 
 ### 1.1 Student
-- **Description**: An object that represents a student taking part in a class.
-- **Properties**:
-  - `studentId: String` – The unique ID of the student.
-  - `name: String` – Name of the student.
-  - `email: String` – Email of the student.
-- **Behaviors**:
-  - `login()` – This method authenticates a student.
-  - `submitAssignment()` – Submits an assignment to the system.
-  - `viewGrade()` – Shows the grades earned by the student after completing an assignment.
+- **Description**: An item that acts as a representation of a student engaged in a class.
+- **Attributes**:
+  - `studentId: String` – The unique identifier of the student.
+  - `name: String` – The name of the student.
+  - `email: String` – The email address of the student.
+- **Methods**:
+  - `login()` – The method logs in the student.
+  - `submitAssignment()` – Submit an assignment through the system.
+  - `viewGrade()` – View the grade received by the student on submitting the assignment.
 
 ### 1.2 Professor
-- **Description**: An instructor responsible for assignment management and grading submissions.
-- **Fields**:
-  - `professorId: String` – A unique ID assigned to each professor.
-  - `name: String` – The full name of the professor.
-  - `department: String` – Department where the professor belongs.
-- **Functions**:
-  - `login()` – Login function for the professor.
-  - `createAssignment()` – Create assignments for students.
-  - `gradeSubmissions()` – Grade submissions manually or auto-submissions.
+- **Description**: A teacher who takes charge of creating and managing assignments along with evaluating student submissions.
+- **Attributes**:
+  - `professorId: String`: Unique identifier for each professor.
+  - `name: String`: Full name of the professor.
+  - `department: String`: The department to which the professor is affiliated.
+- **Methods**:
+  - `login()`: Login method for professors.
+  - `createAssignment()`: Create an assignment for the student.
+  - `gradeSubmissions()`: Evaluate manual/automatic submission by students.
 
 ### 1.3 Administrator
-- **Description**: Controls overall data and user accounts.
+- **Responsibilities**: In charge of handling the user data and accounts.
 - **Properties**:
-  - `adminId: String` – Unique identifier for the administrator.
-  - `name: String` – Name of the administrator.
-  - `email: String` – Email address of the administrator.
-- **Functions**:
-  - `login()` – Validates the administrator's credentials.
-  - `manageUsers()` – Manages users' creation, modification, and deletion.
-  - `generateReports()` – Generates reports on system usage and compliance.
+  - `adminId`: String – The ID of the administrator.
+  - `name`: String – The name of the administrator.
+  - `email`: String – The email of the administrator.
+- **Methods**:
+  - `login()`: Used to authenticate the login details of the administrator.
+  - `manageUsers()`: Used to create, update, and delete users.
+  - `generateReports()`: Used to generate multiple types of reports on the system.
 
 ### 1.4 State Auditor
-- **Definition**: An external organization that performs an audit on the system’s records.
+- **Description**: An external agent who performs the audit on the system.
 - **Properties**:
-  - `auditId`: String – ID of the audit request.
-  - `agency`: String – Name of the auditing agency.
-- **Functions**:
-  - `requestAudit()` – Performs a compliance audit.
-  - `viewRecords()` – Views logs and grades within the system.
+  - `auditId`: String – The ID for the audit request.
+  - `agency`: String – The name of the auditing agency.
+- **Methods**:
+  - `requestAudit()`: Carries out the audit process to check for compliance.
+  - `viewRecords()`: Views the logs and grades within the system.
+
 ---
 
 ## 2. Supporting Classes
 
 ### 2.1 Submission
-- **Description**: Models a submission by a student.
+- **Description**: Represents submission of a student.
 - **Properties**:
-  - `assignmentId: String` – Indicates the ID of the corresponding assignment.
+  - `assignmentId: String` – Refers to the assignment ID.
   - `title: String` – Submission title.
-  - `dateTime: String` – Submission date and time.
-- **Functions**:
-  - `submit()` – Submits the finalized submission.
-  - `updateGrade()` – Updates the grade of the submission.
+  - `dateTime: String` – Submission datetime.
+- **Methods**:
+  - `submit()` – Function that submits the completed submission.
+  - `updateGrade()` – Method that updates the grade of the submission.
 
 ### 2.2 Grades
-- **Description**: Contains grades of students' works.
-- **Attributes**:
-  - `assignmentId: String` – Reference to an assignment.
-  - `title: String` – Name of the assignment.
-  - `datetime: String` – Time when the work is graded.
+- **Description**: Stores grades for students’ assignments.
+- **Fields**:
+  - `assignmentId: String` – Refer to the assignment Id.
+  - `title: String` – Assignment title.
+  - `datetime: String` – Datetime of grading the assignment.
 
 ---
 
 ## 3. External Interfaces
 
 ### 3.1 TurnitinAPI (Interface)
-- **Description**: Used to detect plagiarism within submitted works.
+- **Description**: It is utilized to detect any form of plagiarism in the submitted content.
 - **Methods**:
-  - `checkPlagiarism()` – Checks the work on plagiarism.
+  - `checkPlagiarism()` – It verifies the content against plagiarism.
   - `getSimilarityReport()`
 
 ### 3.2 LMSMainframe (Interface)
-- **Objective**: Synchronization of the data with a foreign Learning Management System.
+- **Goal**: Data synchronization with an external learning management system.
 - **Methods**:
-  - `syncStudentData()` – Loads the data on students.
-  - `validateEnrollment()` – Validates the student’s enrollment.
-  - `storeGrades()` – Uploads final grade information.
+  - `syncStudentData()` – It loads all the data of the student.
+  - `validateEnrollment()` – It validates the enrollment of the student.
+  - `storeGrades()` – It stores
 
----
+## 5. Relationship and Interaction
 
-## 5. Relationships and Interactions
-
-- **Student ↔ Submission** The student communicates with the submission component (submission creation and submission).
-- **Professor → TurnitinAPI** Professor verifies plagiarism through the API.
-- **Professor → Audit Data** Professor has the ability to audit the submission and grade data.
-- **Administrator → State Auditor** Administers provide information to the state auditor. 
-- **Administrator → Data** Administrator handles all system data.
-- **Grades ↔ LMSMainframe** The grades are synchronized with the external Learning Management System.
-
----
+- **Student ↔ Submission:** Interaction between the student and the submission module (submission creation and submission).
+- **Professor → TurnitinAPI:** Professor uses the API to verify plagiarism.
+- **Professor → Audit Data:** Professor has access to the audit and grading data of the submission.
+- **Administrator → State Auditor:** Information is provided by the administrators to the state auditor. 
+- **Administrator → Data:** Administrator manages all the data of the system.
+- **Grades ↔ LMSMainframe:** Grades are updated from the external Learning Management System.
 
 ## Object Diagram:
 
@@ -112,10 +109,10 @@ The Automated Grading System is modeled with the help of the **UML Class & Objec
 
 ## 6. Purpose of the Object Diagram
 
-- **Validation** Proves that the class associations could be instantiated.
-- **Debugging** Displays one specific state of the system (for example, while assigning grades).
-- **Communication** Demonstrates exactly how the data flows among objects.
-- **Test Cases** Helps create test cases to use for testing purposes.
+- **Validation:** Validates whether the class relationships can actually be implemented.
+- **Debugging:** Shows one particular state of the system (such as grading).
+- **Communication:** Illustrates precisely how data is shared between the objects.
+- **Test Cases:** Enables the generation of test cases that can be used for testing.
 
 ---
 
